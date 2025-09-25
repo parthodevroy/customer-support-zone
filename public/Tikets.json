@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Login issue",
+    "description": "User cannot log in with correct credentials.",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-01T09:15:00Z"
+  },
+  {
+    "id": 1002,
+    "title": "Payment not processing",
+    "description": "Payment gateway is not responding during checkout.",
+    "customer": "David Smith",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-09-02T12:30:00Z"
+  },
+  {
+    "id": 1003,
+    "title": "Slow dashboard loading",
+    "description": "Dashboard takes more than 10 seconds to load.",
+    "customer": "Sophia Martinez",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-03T08:00:00Z"
+  },
+  {
+    "id": 1004,
+    "title": "Email not sending",
+    "description": "Customer reports not receiving confirmation emails.",
+    "customer": "James Lee",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-03T15:45:00Z"
+  },
+  {
+    "id": 1005,
+    "title": "Error 500 on reports page",
+    "description": "Reports page crashes with internal server error.",
+    "customer": "Olivia Brown",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-04T10:20:00Z"
+  },
+  {
+    "id": 1006,
+    "title": "Mobile app crashing",
+    "description": "App crashes on Android when opening settings.",
+    "customer": "Michael Green",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-05T11:00:00Z"
+  },
+  {
+    "id": 1007,
+    "title": "Password reset not working",
+    "description": "Reset link is expired immediately after generation.",
+    "customer": "Emma Wilson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-06T14:10:00Z"
+  },
+  {
+    "id": 1008,
+    "title": "Profile picture upload fails",
+    "description": "Users cannot upload profile pictures larger than 1MB.",
+    "customer": "Daniel Kim",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-09-07T09:50:00Z"
+  },
+  {
+    "id": 1009,
+    "title": "Subscription renewal error",
+    "description": "Auto-renewal is failing for some credit cards.",
+    "customer": "Sophia Carter",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-08T16:40:00Z"
+  },
+  {
+    "id": 1010,
+    "title": "Search bar not responsive",
+    "description": "Search bar does not resize properly on mobile.",
+    "customer": "William Johnson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-09T13:00:00Z"
+  }
+]
