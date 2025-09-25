@@ -19,7 +19,7 @@ const alltiketsdata=tikets()
 function App() {
   const [tiketadd, setTiketadd]=useState(0)
   const [taskstatus , setTaskstatus]=useState([])
-  console.log(taskstatus);
+  const [resolvecount,setResolvecount]=useState(0)
   
   
 
@@ -28,9 +28,9 @@ function App() {
      
 
      <Navber></Navber>
-     <Bodyparent tiketadd={tiketadd}></Bodyparent>
+     <Bodyparent resolvecount={resolvecount} tiketadd={tiketadd}></Bodyparent>
      <Suspense fallback={"loaading..."}>
-      <Customerstiket taskstatus={taskstatus} setTaskstatus={setTaskstatus} setTiketadd={setTiketadd} alltiketsdata={alltiketsdata}></Customerstiket>
+      <Customerstiket setResolvecount={setResolvecount} taskstatus={taskstatus} setTaskstatus={setTaskstatus} setTiketadd={setTiketadd} alltiketsdata={alltiketsdata}></Customerstiket>
      </Suspense>
      
     </>
