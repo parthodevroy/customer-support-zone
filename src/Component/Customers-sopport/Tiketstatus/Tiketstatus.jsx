@@ -1,9 +1,11 @@
 
 
-const Tiketstatus = () => {
+const Tiketstatus = ({setTaskstatus}) => {
     return (
         <div>
-            <h1>hello</h1>
+            {
+                setTaskstatus.map((status=>status.title))
+            }
         </div>
     );
 };

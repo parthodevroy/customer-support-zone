@@ -2,7 +2,7 @@
 import victorimg from "../../assets/vector1.png";
 
 
-const Bodyparent = () => {
+const Bodyparent = ({tiketadd}) => {
   return (
     <div className="h-[370px] bg-gray-100 w-full flex items-center justify-center gap-5 ">
       
@@ -13,7 +13,8 @@ const Bodyparent = () => {
           style={{ backgroundImage: `url(${victorimg})` }}
         ></div>
         <h1 className="text-white text-2xl font-bold text-center pt-[70px] relative z-10">
-          hellow
+          <h1>In-Progress</h1>
+         {tiketadd}
         </h1>
         <div
           className="absolute top-0 right-0 w-[300px] h-full bg-cover"

@@ -3,10 +3,9 @@ import Tiket from "./Tiket";
 import Tiketstatus from "../Tiketstatus/Tiketstatus";
 
 
-const Customerstiket = ({alltiketsdata}) => {
+const Customerstiket = ({alltiketsdata,setTiketadd,setTaskstatus,taskstatus}) => {
 
     const usedata=use(alltiketsdata)
-    console.log(usedata);
     
     
     return (
@@ -18,14 +17,14 @@ const Customerstiket = ({alltiketsdata}) => {
     
                <div className="grid grid-cols-2 p-2 space-y-4">
                  {
-                    usedata.map((tiket=><Tiket tiket={tiket} ></Tiket>))
+                    usedata.map((tiket=><Tiket key={tiket.id} taskstatus={taskstatus} setTaskstatus={setTaskstatus} setTiketadd={setTiketadd} tiket={tiket} ></Tiket>))
                 }
                </div>
 </div>
 
 {/* right tiket status */}
+<Tiketstatus setTaskstatus={setTaskstatus}></Tiketstatus>
 
-<Tiketstatus></Tiketstatus>
                  </div>
             
         </div>
