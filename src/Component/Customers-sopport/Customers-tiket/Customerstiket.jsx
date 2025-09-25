@@ -3,7 +3,7 @@ import Tiket from "./Tiket";
 import Tiketstatus from "../Tiketstatus/Tiketstatus";
 
 
-const Customerstiket = ({alltiketsdata,setTiketadd,setTaskstatus,taskstatus,setResolvecount}) => {
+const Customerstiket = ({alltiketsdata,setResolvetask,resolvetask,tiketadd,setTiketadd,setTaskstatus,taskstatus,setResolvecount}) => {
 
     const usedata=use(alltiketsdata)
     
@@ -23,7 +23,7 @@ const Customerstiket = ({alltiketsdata,setTiketadd,setTaskstatus,taskstatus,setR
 </div>
 
 {/* right tiket status */}
-<Tiketstatus setResolvecount={setResolvecount} taskstatus={taskstatus}></Tiketstatus>
+<Tiketstatus resolvetask={resolvetask}setResolvetask={setResolvetask} setResolvecount={setResolvecount} setTiketadd={setTiketadd} tiketadd={tiketadd} taskstatus={taskstatus}></Tiketstatus>
 
                  </div>
             
