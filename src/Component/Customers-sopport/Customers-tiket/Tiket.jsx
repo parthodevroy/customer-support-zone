@@ -36,6 +36,7 @@ const Tiket = ({tiket,setTiketadd,setTaskstatus,taskstatus}) => {
         setTaskstatus([...taskstatus,tiket])
         
         
+        
     }
     return (
        <button onClick={()=>handelcart()}>
