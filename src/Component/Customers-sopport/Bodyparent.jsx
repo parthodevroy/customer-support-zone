@@ -4,7 +4,7 @@ import victorimg from "../../assets/vector1.png";
 
 const Bodyparent = ({tiketadd,resolvecount}) => {
   return (
-    <div className="h-[340px] bg-gray-100 w-full flex items-center justify-center gap-5 ">
+    <div className="h-[340px] bg-gray-200 w-full flex items-center justify-center gap-5 ">
       
       <div className="relative w-[600px] h-[250px]  bg-[#632EE3] overflow-hidden">
 

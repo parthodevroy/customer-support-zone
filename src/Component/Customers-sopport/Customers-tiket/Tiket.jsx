@@ -1,37 +1,9 @@
-import Tiketstatus from "../Tiketstatus/Tiketstatus";
-
-const getStatusColor = (status) => {
-  switch ((status || "").toLowerCase()) {
-    case "open":
-      return "text-green-600 font-semibold";
-    case "in progress":
-    case "in-progress":
-      return "text-yellow-600 font-semibold";
-    case "closed":
-    case "resolved":
-      return "text-green-600 font-semibold";
-    default:
-      return "text-gray-600 font-semibold";
-    }
-};
-
-const getPriorityColor = (priority) => {
-  switch ((priority || "").toLowerCase()) {
-    case "high":
-      return "text-red-600 font-semibold";
-    case "medium":
-      return "text-amber-600 font-semibold";
-    case "low":
-      return "text-green-600 font-semibold";
-    default:
-      return "text-gray-600 font-semibold";
-  }
-};
+import { toast } from "react-toastify";
 
 const Tiket = ({tiket,setTiketadd,setTaskstatus,taskstatus}) => {
 
     const handelcart=()=>{
-        alert("add inprogress")
+        toast("add inprogress")
         setTiketadd(prev=>prev+1)
         setTaskstatus([...taskstatus,tiket])
         
@@ -41,21 +13,23 @@ const Tiket = ({tiket,setTiketadd,setTaskstatus,taskstatus}) => {
     return (
        <button onClick={()=>handelcart()}>
             
-            <div class="card bg-white p-2 w-110 shadow-sm">
+            <div class="card bg-white rounded-xl p-2 w-full md:w-110 h-[120px] shadow-sm">
   <div class="card-body">
     <div className="flex justify-between">
         <h2 class="card-title font-semibold">{tiket.title}</h2>
-        <p className={getStatusColor(tiket.status)}>{tiket.status}</p>
+        <p className={ ` rounded-lg w-24 h-7 ${tiket.status=="Open"?"text-black bg-emerald-300 ]"
+          :tiket.status=="In Progress"?"text-black bg-yellow-200":"text-black bg-blue-400"}`} >{tiket.status}</p>
     </div>
     <p>{tiket.description}</p>
     <div class="card-actions justify-end">
      <div className="flex justify-between">
-        <div className="flex gap-2">
+        <div className="flex pt-2 gap-2">
             <h4>#{tiket.id}</h4>
-            <p className={getPriorityColor(tiket.priority)}>{tiket.priority}</p>
+            <p className={`${tiket.priority=="High"?"text-amber-400":tiket.priority=="Critical"?
+              "text-red-600":"text-green-500"}`} >{tiket.priority}</p>
 
         </div>
-        <div className="flex gap-2">
+        <div className="flex pt-2 gap-2">
             <h4>{tiket.customer}</h4>
             <p>{tiket.createdAt}</p>
 

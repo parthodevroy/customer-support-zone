@@ -3,7 +3,7 @@ import Task from "./Task";
 
 const Resolvetask = ({resolvetask}) => {
     return (
-        <div>
+        <div className="space-y-2 p-2">
             {
                 resolvetask.map((task=><Task task={task}></Task>))
             }
