@@ -1,4 +1,4 @@
-
+import './index.css'
 import { ToastContainer} from 'react-toastify';
 import { useState, useEffect, Suspense } from 'react'
 import './App.css'
