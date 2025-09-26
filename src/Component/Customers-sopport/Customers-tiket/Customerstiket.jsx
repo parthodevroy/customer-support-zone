@@ -10,7 +10,7 @@ const Customerstiket = ({ alltickets, updatedTasks, setResolvetask,
       <div className="flex flex-col md:flex-row p-4">
         
         {/* left side tickets */}
-        <div className="w-full h-full md:w-[950px] h-[700px]">
+        <div className="w-full h-full md:w-[950px] md:h-auto">
           <h1 className="font-semibold text-xl pl-2">Customer Tickets</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 p-2 space-y-4">
             {

@@ -20,7 +20,7 @@ const Navber = () => {
     <button>Blog</button>
 <button>Download</button>
     <button>Contact</button>
-    <a class="bg-[#632EE3] text-white h-8 rounded-xl w-28"> + Next Ticket</a>
+    <a class="bg-[#632EE3] text-white h-7 pl-1 rounded-xl w-28"> + Next Ticket</a>
   </div>
 </div>
         </div>

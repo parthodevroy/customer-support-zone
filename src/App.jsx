@@ -5,6 +5,8 @@ import './App.css'
 import Bodyparent from './Component/Customers-sopport/Bodyparent'
 import Customerstiket from './Component/Customers-sopport/Customers-tiket/Customerstiket'
 import Navber from './Component/Customers-sopport/Navber'
+import Fotter from './Component/Customers-sopport/Fottersection/Fotter';
+import Foterend from './Component/Customers-sopport/Fottersection/Foterend';
 
 function App() {
   const [alltickets, setAlltickets] = useState([])
@@ -55,6 +57,8 @@ function App() {
           setResolvecount={setResolvecount}
         />
       </Suspense>
+      <Fotter></Fotter>
+      <Foterend></Foterend>
 
       <ToastContainer/>
     </>
