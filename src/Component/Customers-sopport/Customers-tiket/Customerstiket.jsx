@@ -17,6 +17,7 @@ const Customerstiket = ({ alltickets, updatedTasks, setResolvetask,
               alltickets.map((tiket) => (
                 <Tiket
                   key={tiket.id}
+                  
                   tiket={tiket}
                   taskstatus={taskstatus}
                   setTaskstatus={setTaskstatus}

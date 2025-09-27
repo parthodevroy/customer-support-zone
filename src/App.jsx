@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import { ToastContainer} from 'react-toastify';
 import { useState, useEffect, Suspense } from 'react'
 import './App.css'
@@ -18,8 +18,9 @@ function App() {
   // ✅ fetch data with useEffect
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/Tikets.json")
-      const data = await res.json()
+      const res = await fetch(`${import.meta.env.BASE_URL || ''}/Data.json`);
+
+      const data = await res.json();
       setAlltickets(data)
     }
     fetchData()
@@ -45,6 +46,7 @@ function App() {
       <Bodyparent resolvecount={resolvecount} tiketadd={tiketadd} />
       <Suspense fallback={"loading..."}>
         <Customerstiket
+        
           alltickets={alltickets}
           setAlltickets={setAlltickets}
           taskstatus={taskstatus}
