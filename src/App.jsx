@@ -1,4 +1,3 @@
-// import './index.css'
 import { ToastContainer} from 'react-toastify';
 import { useState, useEffect, Suspense } from 'react'
 import './App.css'
@@ -15,7 +14,7 @@ function App() {
   const [resolvecount, setResolvecount] = useState(0)
   const [resolvetask, setResolvetask] = useState([])
 
-  // ✅ fetch data with useEffect
+  
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(`${import.meta.env.BASE_URL || ''}/Data.json`);
@@ -28,13 +27,13 @@ function App() {
 
   
   const updatedTasks = (completedTask) => {
-    // taskstatus থেকে remove
+    
     setTaskstatus(prev => prev.filter(task => task.id !== completedTask.id))
 
-    // alltickets থেকেও remove
+   
     setAlltickets(prev => prev.filter(task => task.id !== completedTask.id))
 
-    // resolve list এ পাঠানো চাইলে
+    
     setResolvetask(prev => [...prev, completedTask])
     setResolvecount(prev => prev + 1)
   }
