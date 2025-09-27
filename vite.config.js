@@ -7,10 +7,12 @@ import tailwindcss from '@tailwindcss/vite'
 //   plugins: [react(),tailwindcss()],
 // })
 
-export default defineConfig({
+// vite.config.js
+export default {
   base: '/customer-support-zone/',
-  plugins: [react(), tailwindcss()],
-});
+  plugins: [react(),tailwindcss()],
+}
+
 
 // // import { defineConfig } from 'vite'
 // // import react from '@vitejs/plugin-react'
